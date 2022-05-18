@@ -1,0 +1,103 @@
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3rem;
+    text-align: center; 
+}
+
+.generateNewHeadline {
+	background-color:rgb(255,200,20);
+	border-radius:11px;
+	border:2px solid rgb(255,200,20);
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(255,0,200);
+	font-family:Verdana;
+	font-size:17px;
+	padding:6px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px rgb(255,0,255);
+}
+.generateNewHeadline:hover {
+	background-color: rgb(247, 255, 128);
+}
+.generateNewHeadline:active {
+    top:1px;
+    transform:scale(0.9);
+}
+
+#parent {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CODE BELOW FROM https://www.w3schools.com/howto/howto_css_switch.asp"
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;	
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;	content: "";
+	height: 26px;	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {	background-color: rgb(255,0,200);; }
+
+input:focus + .slider {	box-shadow: 0 0 1px rgb(255,0,255);; }
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {	border-radius: 34px; }
+
+.slider.round:before {	border-radius: 50%; }
+
+/* rest of code from me */
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(255,200,20);
+	color: rgb(255,0,255);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 1rem;
+	align-items: left;
+}
